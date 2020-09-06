@@ -1,40 +1,38 @@
 package com.company;
 
-public class Basket {
-    private  int length;
-    private  int width;
-    private  int heigth;
-    public void setLength(int length){
-        this.length = length;
+class Basket extends Car {
+    private int basketLength;
+    private int basketWidth;
+    private int basketHeigth;
+    public Basket(int l,int w,int h){
+        this.basketLength = l;
+        this.basketWidth = w;
+        this.basketHeigth = h;
     }
-    public void setWidth(int width){
-        this.width = width;
+    void setBasketWidth(int width){
+        this.basketWidth = width;
     }
-    public void setHeight(int heigth){
-        this.heigth = heigth;
+    void setBasketHeigth(int heigth){
+        this.basketHeigth = heigth;
     }
-    int lenghtChanger(){
-        length = length * 3;
-        return length;
+    void setBasketLength(int length){
+        this.basketLength = length;
     }
-    int widhtChanger(){
-        width = width *2;
-        return width;
+    int getBasketLength(){
+        return this.basketLength;
     }
-    int heightChanger(){
-        heigth = heigth * 12;
-        return heigth;
+    int getBasketWidth(){
+        return this.basketWidth;
     }
-    int getLenght(){
-        this.length = lenghtChanger();
-        return this.length;
+    int getBasketHeigth(){
+        return this.basketHeigth;
     }
-    int getWidth(){
-        this.width = widhtChanger();
-        return this.width;
-    }
-    int getHeight(){
-        this.heigth = heightChanger();
-        return this.heigth;
+
+    void allBasketSetsChanger()
+    {
+        this.basketHeigth = basketLength *3;
+        this.basketWidth = basketWidth *3;
+        this.basketLength= basketLength *4;
+
     }
 }

@@ -1,46 +1,35 @@
 package com.company;
-import java.util.Scanner;
-public class Helm {
-    Scanner scanner = new Scanner(System.in);
-    private int diameter;
-    private int radius;
-    private int length;
-    public Helm(int l,int r,int d) {
-        this.diameter = d;
-        this.radius = r;
-        this.length = l;
+
+public class Helm extends Car {
+    private int helmDiameter;
+    private int helmRadius;
+    private int helmLength;
+    public Helm (int d,int r,int l){
+        this.helmDiameter = d;
+        this.helmLength = l;
+        this.helmRadius = r;
+    }void setHelmDiameter (int diameter){
+        this.helmDiameter = diameter;
     }
-    void setDiameter(){
-        this.diameter =scanner.nextInt();
+    void setHelmRadius (int radius){
+        this.helmRadius = radius;
     }
-    void setRadius(){
-        this.radius = scanner.nextInt();
+    void setHelmLength (int length){
+        this.helmLength = length;
     }
-    void setLength(){
-        this.length = scanner.nextInt();
+    int getHelmDiameter(){
+        return this.helmDiameter;
     }
-    int getDiameter(){
-        this.diameter = diameterChanger();
-        return diameter;
+    int getHelmRadius(){
+        return this.helmRadius;
     }
-    int getRadius(){
-        this.radius = radiusChanger();
-        return radius;
+    int getHelmLenght(){
+        return this.helmLength;
     }
-    int getLength(){
-        this.length = lengthChanger();
-        return length;
-    }
-    int diameterChanger(){
-        this.diameter = diameter * 2;
-        return diameter;
-    }
-    int radiusChanger(){
-        this.radius = radius * 3;
-        return radius;
-    }
-    int lengthChanger(){
-        this.length = length * 4;
-        return length;
+
+    void allHelmSetsChanger(){
+        this.helmRadius = helmRadius *2;
+        this.helmLength = helmLength *3;
+        this.helmDiameter = helmDiameter*4;
     }
 }
