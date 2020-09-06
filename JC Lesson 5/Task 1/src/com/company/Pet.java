@@ -1,2 +1,5 @@
-package com.company;public class Pet {
+package com.company;
+
+abstract class Pet {
+     abstract void voice();
 }
