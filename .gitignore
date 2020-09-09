@@ -2,3 +2,7 @@
 
 /.idea/
 /out/
+*.xml
+*.html
+*.class
+*.iml

@@ -1,2 +1,4 @@
-package com.company;public class Frog {
+package com.company;
+
+public class Frog extends Amphibia{
 }
