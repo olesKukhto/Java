@@ -1,4 +1,5 @@
 package com.company;
 
-public interface Payment {
+public interface Wages {
+    void wages();
 }
