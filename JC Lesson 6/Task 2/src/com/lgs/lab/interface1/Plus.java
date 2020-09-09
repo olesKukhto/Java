@@ -1,2 +1,5 @@
-package com.lgs.lab.interface1;public interface Plus {
+package com.lgs.lab.interface1;
+
+public interface Plus extends Numerable{
+    double plus();
 }
