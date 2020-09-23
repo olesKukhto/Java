@@ -1,0 +1,10 @@
+1.file
+
+/.idea/
+/out/
+*.xml
+*.html
+*.class
+*.iml
+
+*.md
