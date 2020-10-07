@@ -4,6 +4,13 @@ import java.util.Comparator;
 import java.util.Random;
 import java.util.TreeSet;
 
+
+//1) Створити клас (довільно який), описати в ньому мінімум два поля, одне з яких String, інше числове (довільно яке).
+// Створити в мейн методі Set.
+// Наповнити його обєктами даного класу.
+// Використати Comparator і Comparable для сортування за цими полями.
+// Вивести спершу невідсортований список, потім відсортований на консоль.
+
 public class Main {
 
     public static void main(String[] args) {
