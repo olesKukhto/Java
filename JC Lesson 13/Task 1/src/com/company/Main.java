@@ -1,8 +1,19 @@
 package com.company;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-    }
-}
+        Fraction fraction = new Fraction();
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        Deputy deputy = new Deputy();
+           Parliament parliament = new Parliament();
+            parliament.parliamentMenu();
+
+            }
+        }
+
+
